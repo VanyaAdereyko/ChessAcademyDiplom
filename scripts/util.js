@@ -77,9 +77,9 @@ $(function(){
     user.color = (uid[uid.length - 1] === '1') ? 1 : 0 ;
     uid = uid.substr(0, uid.length - 1);
     
-    opponentUid = uid + (user.color ? 0 : 1);
+/*     opponentUid = uid + (user.color ? 0 : 1);
     
-    $('#info .opponent-link').html('http://diovo.com/chess/?game=' + opponentUid).attr('href', '/chess/?game=' + opponentUid);
+    $('#info .opponent-link').html('http://diovo.com/chess/?game=' + opponentUid).attr('href', '/chess/?game=' + opponentUid); */
     
     refreshFromServer();
 });
