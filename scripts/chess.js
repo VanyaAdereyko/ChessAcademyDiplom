@@ -72,8 +72,8 @@ function isPseudoLegal(from, to, currentPlayer){
     var pieceType = fromPiece & 0x07;
 
     if(pieceType === QUEEN){ // королева
-        if( (Math.abs(from - to) % 15 && Math.abs(from - to) % 17) &&    // ход слоном
-            ((from & 0x0F) !== (to & 0x0F) && (from & 0xF0) !== (to & 0xF0))){  // ход ладьей
+        if( (Math.abs(from - to) % 15 && Math.abs(from - to) % 17) &&    // ход как слоном
+            ((from & 0x0F) !== (to & 0x0F) && (from & 0xF0) !== (to & 0xF0))){  // ход  как ладьей
             return false;
         }
     }else if(pieceType === ROOK){ // ладья
